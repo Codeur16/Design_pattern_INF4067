@@ -37,8 +37,8 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
   - [**Prérequis**](#prérequis)
   - [**Tests**](#tests)
   - [1. **Pattern Factory**](#1-pattern-factory)
-- [1.1.  **Utilisation d'une méthode de fabrique (Abstract Factory)**](#11--utilisation-dune-méthode-de-fabrique-abstract-factory)
-- [1.2.    **Utilisation d'une classe abstraite de fabrique (Factory)**](#12----utilisation-dune-classe-abstraite-de-fabrique-factory)
+    - [1.1.  **Utilisation d'une méthode de fabrique (Abstract Factory)**](#11--utilisation-dune-méthode-de-fabrique-abstract-factory)
+    - [1.2.    **Utilisation d'une classe abstraite de fabrique (Factory)**](#12----utilisation-dune-classe-abstraite-de-fabrique-factory)
   - [2. **Abstract Factory**](#2-abstract-factory)
   - [3. **Singleton**](#3-singleton)
   - [4. **Builder**](#4-builder)
@@ -61,7 +61,7 @@ Le Pattern Factory est un modèle de construction permettant de créer des objet
 
 
     
- # 1.1.  **Utilisation d'une méthode de fabrique (Abstract Factory)**
+ ### 1.1.  **Utilisation d'une méthode de fabrique (Abstract Factory)**
 Dans ce cas, une fabrique concrète contient une méthode de fabrication où un switch case ou des if déterminent l'objet à créer. Une classe produit abstraite est utilisée pour instancier les sous-classes concrètes.
 > Client-factory2.java:
  ```java
@@ -96,7 +96,7 @@ public class Client {
 
 ![Image](./Class-diagram/factoryProduct.drawio.png "diagram")
 
- # 1.2.    **Utilisation d'une classe abstraite de fabrique (Factory)**
+ ### 1.2.    **Utilisation d'une classe abstraite de fabrique (Factory)**
 Une fabrique abstraite contient les signatures des méthodes de fabrication, avec des fabriques concrètes pour chaque type d'objet. Une classe produit abstraite est utilisée pour instancier les sous-classes concrètes.
 
 > Client-factory3.java:
