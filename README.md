@@ -92,6 +92,10 @@ public class Client {
    - Je suis un Produit A2
    - ProduitA1.MethodeA2
 
+> Diagramme de classe
+
+![Image](./Class-diagram/factoryProduct.drawio.png "diagram")
+
  # 1.2.    **Utilisation d'une classe abstraite de fabrique (Factory)**
 Une fabrique abstraite contient les signatures des méthodes de fabrication, avec des fabriques concrètes pour chaque type d'objet. Une classe produit abstraite est utilisée pour instancier les sous-classes concrètes.
 
@@ -174,7 +178,12 @@ public class Client {
   - ProduitA2.MethodeA
   - Je suis un produit B2
   - ProduitB2.MethodeB
-  - 
+
+> Diagramme de classe
+
+![Image](./Class-diagram/AbstractFactory.png "diagram")
+
+
 ## 3. **Singleton**
 
 Le modèle Singleton garantit qu'une classe possède une seule instance et offre un accès global à celle-ci. 
@@ -199,6 +208,10 @@ public class Clients {
 > Resultat apres execution
   - la somme est 7   Je suis une instance mesvaleurs sont : x = 0 et y = 0
   - Je suis une instance mesvaleurs sont : x = 0 et y = 0
+
+> Diagramme de classe
+
+![Image](./Class-diagram/Singleton.png "diagram")
 ## 4. **Builder**
 
 Le modèle Builder permet de créer des objets complexes à partir d'objets sources. 
@@ -234,3 +247,8 @@ public class Client {
 
 
   - Pizza Picante Ok!!
+  
+
+> Diagramme de classe
+
+![Image](./Class-diagram/Builder.png "diagram")
