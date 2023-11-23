@@ -30,16 +30,16 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 ## COMMENCER:
 - [TP INF4067](#tp-info-4067)
-        - [Sujets](#sujet)
-        - [Prérequis](#1-prérequis)
-        - [Tests](#2-tests)
-        - [Introduction](#Introduction)
-        - [Pattern Factory](#Pattern-factory)
-        - [Utilisation d'une méthode de fabrique](#Utilisation-d'une-méthode-de-fabrique)
-        - [Utilisation d'une classe abstraite de fabrique](#Utilisation-d'une-classe-abstraite-de-fabrique)
-        - [Abstract Factory](#Abstract-Factory)
-        - [Singleton](#Singleton)
-        - [Builder](Builder)
+    - [Sujets](#sujet)
+    - [Prérequis](#1-prérequis)
+    - [Tests](#2-tests)
+    - [Introduction](#Introduction)
+    - [Pattern Factory](#Pattern-factory)
+    - [Utilisation d'une méthode de fabrique](#Utilisation-d'une-méthode-de-fabrique)
+    - [Utilisation d'une classe abstraite de fabrique](#Utilisation-d'une-classe-abstraite-de-fabrique)
+    - [Abstract Factory](#Abstract-Factory)
+    - [Singleton](#Singleton)
+    - [Builder](Builder)
 
 
 ## 1. **Prérequis**
@@ -77,7 +77,17 @@ Une fabrique abstraite contient les signatures des méthodes de fabrication, ave
 1. **Abstract Factory**
 
 L'Abstract Factory est utilisée pour créer des objets regroupés en famille sans connaître leurs classes concrètes. 
-
+  > Resultat apres execution du client.java:
+  - Utilisation de la premiere fabrique
+  - Je suis un produit A1
+  - ProduitA1.MethodeA
+  - Je suis un produit B1
+  - ProduitB1.MethodeB
+  - Utilisation de la seconde fabrique
+  - Je suis un produit A2
+  - ProduitA2.MethodeA
+  - Je suis un produit B2
+  - ProduitB2.MethodeB
 1. **Singleton**
 
 Le modèle Singleton garantit qu'une classe possède une seule instance et offre un accès global à celle-ci. 
