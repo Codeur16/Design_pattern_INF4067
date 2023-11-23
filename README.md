@@ -66,10 +66,13 @@ Le Pattern Factory est un modèle de construction permettant de créer des objet
     
  1.  **Utilisation d'une méthode de fabrique (Abstract Factory)**
 Dans ce cas, une fabrique concrète contient une méthode de fabrication où un switch case ou des if déterminent l'objet à créer. Une classe produit abstraite est utilisée pour instancier les sous-classes concrètes.
+- Resultat apres execution du client.java:
+   - Je suis un Produit A1
+   - ProduitA1.MethodeA
+   - Je suis un Produit A2
+   - ProduitA1.MethodeA2
 
-
-
- 42.   **Utilisation d'une classe abstraite de fabrique (Factory)**
+ 1.    **Utilisation d'une classe abstraite de fabrique (Factory)**
 Une fabrique abstraite contient les signatures des méthodes de fabrication, avec des fabriques concrètes pour chaque type d'objet. Une classe produit abstraite est utilisée pour instancier les sous-classes concrètes.
 
 
@@ -91,7 +94,27 @@ L'Abstract Factory est utilisée pour créer des objets regroupés en famille sa
 1. **Singleton**
 
 Le modèle Singleton garantit qu'une classe possède une seule instance et offre un accès global à celle-ci. 
+ > Client-singleton.java:
+ ```java
+ package com.singleton;
 
+// Une classe de test
+
+public class Clients {
+    public static void main(String[] args) {
+        int som = Singleton.getInstance().somme(2, 5);
+        System.out.printf("la somme est %d", som);
+        Singleton s1 = Singleton.getInstance(8, 3);
+        s1.affiche();
+        Singleton s2 = Singleton.getInstance(5, 9);
+        s2.affiche();
+    }
+}
+ 
+ ```
+> Resultat apres execution
+  - la somme est 7   Je suis une instance mesvaleurs sont : x = 0 et y = 0
+  - Je suis une instance mesvaleurs sont : x = 0 et y = 0
 1. **Builder**
 
 Le modèle Builder permet de créer des objets complexes à partir d'objets sources. 
